@@ -9,6 +9,15 @@ class TestBinaryMinHeap(unittest.TestCase):
     def test_size_of_empty_heap(self):
         heap = BinaryMinHeap()
         assert heap.size() == 0
+    
+    def test_is_empty_on_empty_heap(self):
+        heap = BinaryMinHeap()
+        assert heap.is_empty() == True
+    
+    def test_is_empty_on_non_empty_heap(self):
+        heap = BinaryMinHeap()
+        heap.insert(1)
+        assert heap.is_empty() == False
 
     def test_get_min_on_empty_heap(self):
         heap = BinaryMinHeap()

@@ -1,6 +1,9 @@
 
 # Created by https://www.gitignore.io/api/macos,python
 
+# Code Editor
+.vscode
+
 ### macOS ###
 *.DS_Store
 .AppleDouble
@@ -33,6 +36,7 @@ Temporary Items
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyc
 
 # C extensions
 *.so
